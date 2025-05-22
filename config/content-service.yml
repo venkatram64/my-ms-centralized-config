@@ -15,7 +15,7 @@ management: #actuator configuration
 
 spring:
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_posts_new
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/content_db
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
