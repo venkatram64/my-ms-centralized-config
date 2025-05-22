@@ -63,4 +63,4 @@ spring:
       enabled: always
 
 zipkin:
-  base-url: http://host.docker.internal:9411
+  base-url: http://localhost:9411
