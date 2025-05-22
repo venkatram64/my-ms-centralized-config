@@ -50,3 +50,6 @@ eureka:  #client is registering into Eureka server
     hostname: ${spring.application.name}
     instanceId: ${spring.application.name}:${server.port}
 
+zipkin:
+  base-url: http://host.docker.internal:9411
+

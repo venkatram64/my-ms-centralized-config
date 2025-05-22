@@ -61,3 +61,6 @@ spring:
   output:
     ansi:
       enabled: always
+
+zipkin:
+  base-url: http://host.docker.internal:9411

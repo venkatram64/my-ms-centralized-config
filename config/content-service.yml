@@ -48,6 +48,9 @@ eureka: #client is registering into Eureka server
     hostname: ${spring.application.name}
     instanceId: ${spring.application.name}:${server.port}
 
+zipkin:
+  base-url: http://host.docker.internal:9411
+
 #secret for creating JWT token, JWT token will live upto 10 hours
 jwtSecret: b6c3e9153b2ae05e5b20444bbf014ab0dba5cfac666117d767dbd284b825ed85
 expirationInMs: 36000000  # 10(hours) * 60(minutes) * 60(seconds) * 1000(milli seconds) = 36000000
