@@ -12,6 +12,8 @@ management: #actuator configuration
   tracing:  #for zipkin logging
     sampling:
       probability: 1.0
+  zipkin:
+    base-url: http://zipkin-server:9411
 
 spring:
   datasource:
@@ -48,8 +50,7 @@ eureka: #client is registering into Eureka server
     hostname: ${spring.application.name}
     instanceId: ${spring.application.name}:${server.port}
 
-zipkin:
-  base-url: http://localhost:9411
+
 
 #secret for creating JWT token, JWT token will live upto 10 hours
 jwtSecret: b6c3e9153b2ae05e5b20444bbf014ab0dba5cfac666117d767dbd284b825ed85
